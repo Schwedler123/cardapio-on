@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --title-color: hsl(31.4,100%,30%);
+    --body-color: rgb(245, 250, 215) ;
+    --title-sec-color: hsl(40,3.4%,17.1%);
+    --content-color-p: hsl(0,60%,0%);
+    --desc-title: hsl(32.1,97.7%,83.1%);
+}
+
+body {
+    background-color: var(--body-color);
+    width: 100vw;
+    height: auto;
+     
+}
+
+
+.section {
+    width: 100vw;
+    height: 100vh;
+  
+}
+
+
+span {
+    color: var(--title-color);
+}
+
+h1 {
+    font: 700 2.8rem 'Roboto Serif' , serif;
+    color: var(--title-sec-color);
+}
+
+p {
+    font: 400 1.4rem 'Roboto';
+}
+
+
+.section-principal {
+   
+    display: flex;
+    justify-content: center;
+}
+  
+    
+
+
+.title {
+    width: 17.3vw;
+    height: 2.4vw;
+    margin-top: 2.4vw;
+    text-align: center;
+   
+ 
+}
+.content-p {
+   
+    text-align: center;
+    font: 400 1.4rem 'Roboto';
+    margin-top: 0.4rem;
+    margin-bottom: 2.4vw;
+}
+
+.container-desc-title {
+    display: flex;
+    justify-content: center;
+    background-color: var(--desc-title);
+    
+    padding: 0.8rem 1.6rem;
+    
+}
+
+
+.title-desc {
+    text-align: center;
+    font: 700 1.8rem 'Roboto Serif' , serif;
+    color: var(--title-sec-color);
+    
+}
+
+.global-container-food {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+}
+
+.name-food {
+    font: 700 1.6rem 'Roboto Serif' , serif;
+    color: var(--title-sec-color) ;
+}
+
+.price-food {
+    font: 700 1.6rem 'Roboto Serif' , serif;
+    color: var(--title-sec-color) ;
+}
+
+.container-content-food {
+    width: 24rem;
+    height: 6.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    color: var(--content-color-p);
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+h1 {
+    font: 700 3.5rem 'Roboto Serif' , serif;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+.section-principal {
+    display: flex;
+    justify-content: center ;
+    margin-left: -1rem;
+}
+
+}
